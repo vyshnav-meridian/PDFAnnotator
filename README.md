@@ -17,12 +17,14 @@ Features
 Installation
 
 CocoaPods
+
 Add the following line to your Podfile:
 
 pod 'PDFAnnotator'
 Then run pod install.
 
 Swift Package Manager
+
 1. In Xcode, go to File > Add Packages...
 
 2. Paste the repository URL: https://github.com/vyshnav-meridian/PDFAnnotator.git
@@ -30,6 +32,7 @@ Swift Package Manager
 3. Select version 1.0.2 or higher.
 
 Quick Start
+
 Using PDFAnnotator is designed to be a one-liner. Use the PDFAnnotatorFactory to launch the controller:
 
  PDFAnnotatorFactory.createAndDownload(
@@ -60,14 +63,18 @@ Using PDFAnnotator is designed to be a one-liner. Use the PDFAnnotatorFactory to
 Requirements
 
 . iOS: 14.0 or higher
+
 . Swift: 5.0 or higher
+
 . Xcode: 12.0 or higher
 
 Author
+
 Vyshnav P C Email: vyshnav@meridian.net.in
 
 GitHub: vyshnav-meridian
 
 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
