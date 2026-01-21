@@ -1,8 +1,8 @@
-PDFAnnotator
+## PDFAnnotator
 
 PDFAnnotator is a plug-and-play iOS library that allows users to download, view, and annotate PDFs with ease. It handles the entire lifecycle of a PDF—from fetching a remote URL to saving the final annotated document.
 
-Features
+## Features
 
 . Internal Downloading: Simply provide a web URL; the package handles the background download and local caching.
 
@@ -14,7 +14,7 @@ Features
 
 . Multi-Platform Support: Available via CocoaPods and Swift Package Manager.
 
-Installation
+## Installation
 
 CocoaPods
 
@@ -56,7 +56,7 @@ PDFAnnotatorFactory.createAndDownload(
         self?.present(vc, animated: true)
     }
 )
-
+```
 
 ## Requirements
 
