@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '14.0'
   s.swift_version    = '5.0'
 
-  # This maps your SPM structure to CocoaPods
-  s.source_files     = 'Sources/PDFAnnotator/**/*'
+  # ✅ Updated for exact SPM folder structure
+  s.source_files     = 'Sources/PDFAnnotator/**/*.swift'
   
   s.frameworks       = 'UIKit', 'PDFKit'
 end
