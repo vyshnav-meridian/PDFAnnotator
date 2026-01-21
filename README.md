@@ -39,6 +39,9 @@ Using `PDFAnnotator` is designed to be a one-liner. Use the `PDFAnnotatorFactory
 import PDFAnnotator
 
 // Inside your ViewController
+
+guard let url = URL(string: "https://example.pdf") else { return }
+
 PDFAnnotatorFactory.createAndDownload(
     from: url, 
     onPdfSaved: { path in 
