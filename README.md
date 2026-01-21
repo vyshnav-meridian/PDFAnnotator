@@ -4,15 +4,15 @@ PDFAnnotator is a plug-and-play iOS library that allows users to download, view,
 
 ## Features
 
-. Internal Downloading: Simply provide a web URL; the package handles the background download and local caching.
+* Internal Downloading: Simply provide a web URL; the package handles the background download and local caching.
 
-. Drawing Tools: Smooth ink annotations with customizable colors and brush thickness.
+* Drawing Tools: Smooth ink annotations with customizable colors and brush thickness.
 
-. Undo Support: Easily step back through your annotations.
+* Undo Support: Easily step back through your annotations.
 
-. Built-in Share Sheet: Share or save the final PDF directly from the UI.
+* Built-in Share Sheet: Share or save the final PDF directly from the UI.
 
-. Multi-Platform Support: Available via CocoaPods and Swift Package Manager.
+* Multi-Platform Support: Available via CocoaPods and Swift Package Manager.
 
 ## Installation
 
@@ -63,13 +63,15 @@ PDFAnnotatorFactory.createAndDownload(
 * **iOS**: 14.0 or higher
 * **Swift**: 5.0 or higher
 * **Xcode**: 12.0 or higher
-Author
+  
+## Author
 
-Vyshnav P C Email: vyshnav@meridian.net.in
+Vyshnav P C 
+Email: vyshnav@meridian.net.in
 
 GitHub: vyshnav-meridian
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
