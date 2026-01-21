@@ -31,43 +31,38 @@ Swift Package Manager
 
 3. Select version 1.0.2 or higher.
 
-Quick Start
+## Quick Start
 
-Using PDFAnnotator is designed to be a one-liner. Use the PDFAnnotatorFactory to launch the controller:
+Using `PDFAnnotator` is designed to be a one-liner. Use the `PDFAnnotatorFactory` to launch the controller:
 
- PDFAnnotatorFactory.createAndDownload(
-            from: url,
-            onPdfSaved: { path in
-                print("💾 Saved edited PDF at: \(path)")
-            },
-            onClose: { [weak self] in
-                self?.dismiss(animated: true)
-            },
-            onDownloadProgress: { message in
-                print("⏳ \(message)")
-                print("downoad progress")
-                self.startLoading()
-            },
-            onError: { error in
-                print("❌ Error: \(error.localizedDescription)")
-            },
-            completion: { [weak self] annotatorVC in
-                guard let vc = annotatorVC else { return }
-                vc.modalPresentationStyle = .fullScreen
-                self?.present(vc, animated: true)
-                print("open pdf")
-                self?.stploading()
-            }
-        )
+```swift
+import PDFAnnotator
 
-Requirements
+// Inside your ViewController
+PDFAnnotatorFactory.createAndDownload(
+    from: url, 
+    onPdfSaved: { path in 
+        print("💾 Saved edited PDF at: \(path)") 
+    }, 
+    onClose: { [weak self] in 
+        self?.dismiss(animated: true) 
+    }, 
+    onDownloadProgress: { message in 
+        print("⏳ \(message)") 
+    }, 
+    completion: { [weak self] annotatorVC in 
+        guard let vc = annotatorVC else { return }
+        vc.modalPresentationStyle = .fullScreen
+        self?.present(vc, animated: true)
+    }
+)
 
-. iOS: 14.0 or higher
 
-. Swift: 5.0 or higher
+## Requirements
 
-. Xcode: 12.0 or higher
-
+* **iOS**: 14.0 or higher
+* **Swift**: 5.0 or higher
+* **Xcode**: 12.0 or higher
 Author
 
 Vyshnav P C Email: vyshnav@meridian.net.in
